@@ -7,3 +7,5 @@ RUN wget https://github.com/jgm/pandoc/releases/download/2.7.1/pandoc-2.7.1-1-am
     pip install pandocfilters && \
     apt-get clean -y && \
     rm -rf pandoc-*-amd64.deb /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+WORKDIR /build
